@@ -14,7 +14,7 @@ bool isIsomorphic(char* s, char* t) {
         unsigned char a = s[i];
         unsigned char b = t[i];
 
-        if(st[a] != 0 && st[a] != b)
+        if( st[a] != 0 && st[a] != b)
         {
             return false;
         }
@@ -26,8 +26,7 @@ bool isIsomorphic(char* s, char* t) {
 
         st[a]=b;
         ts[b]=a;
+
     }
     return true;
-
-
 }
